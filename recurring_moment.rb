@@ -16,8 +16,8 @@ class RecurringMoment
 
     while current < date
       if @period == 'monthly'
-          counter += @interval
-          current = @start.advance(months: counter)
+        counter += @interval
+        current = @start.advance(months: counter)
       elsif @period == 'weekly'
         current = current.advance(weeks: @interval)
       elsif @period == 'daily'
